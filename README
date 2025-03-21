@@ -41,32 +41,6 @@ celery -A cryptodatahub beat --loglevel=info
 python manage.py test myapp
 ```
 
----
-
-### **8️ API Endpoints (For Postman Testing)**
-
-#### **Authentication APIs**
-- **Generate Access Token:** `POST /api/token/`
-- **Refresh Token:** `POST /api/token/refresh/`
-
-#### **Organization APIs**
-- **Create Organization:** `POST /api/organizations/`
-- **List Organizations:** `GET /api/organizations/`
-- **Search Organizations:** `GET /api/organizations/?search=Tech`
-- **Filter Organizations by Date:** `GET /api/organizations/?created_at=2025-03-17`
-- **Update Organization:** `PUT /api/organizations/{org_id}/`
-- **Delete Organization:** `DELETE /api/organizations/{org_id}/`
-
-#### **Crypto Price APIs**
-- **Create Crypto Price:** `POST /api/crypto-prices/`
-- **List Crypto Prices:** `GET /api/crypto-prices/`
-- **Filter Prices by Organization:** `GET /api/crypto-prices/?org_id={org_id}`
-- **Paginate Crypto Prices:** `GET /api/crypto-prices/?page=2`
-- **Update Crypto Price:** `PUT /api/crypto-prices/{price_id}/`
-- **Delete Crypto Price:** `DELETE /api/crypto-prices/{price_id}/`
-
----
-
 ### **9️ Monitoring Logs**
 
 #### **Check Celery Logs**
